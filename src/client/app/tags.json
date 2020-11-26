@@ -1,0 +1,29 @@
+{
+    "Web": ["Frontend", "More", "Backend", "Declarative", "Stacks"],
+
+    "Frontend": ["Frontend Basics", "Intermediate"],
+    "Frontend Basics": ["HTML", "CSS", "JS"],
+    "Intermediate": ["Styling", "Interactions", "Tools"],
+
+    "More": ["ECMA", "Database"],
+    "ECMA": [],
+    "Database": [],
+
+    "Backend": ["Backend Basics", "Backend Frameworks"],
+    "Backend Basics":[],
+    "Backend Frameworks":["Node", "Django", "Flask"],
+
+    "Declarative": ["Declarative Basics", "Declarative Frameworks"],
+    "Declarative Basics":[],
+    "Declarative Frameworks":["React", "Angular", "Vue"],
+
+    "Stacks": ["MERN", "MEAN", "Ruby on Rails"],
+    "MERN": [],
+    "MEAN": [],
+    "Ruby on Rails": [],
+
+
+    "tags": ["HTML", "CSS", "JS", "Styling", "Interactions", "Tools", "Node", "Django", "Flask", "React", "Angular", "Vue", "MERN", "MEAN", "Ruby on Rails"]
+
+
+}
