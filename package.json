@@ -7,10 +7,10 @@
     "node": "10.16.0"
   },
   "scripts": {
-    "build": "cd client/app && npm run build",
-    "install-client": "cd client/app && npm install",
+    "build": "cd src/client/app && npm run build",
+    "install-client": "cd src/client/app && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "client": "cd client/app && npm start",
+    "client": "cd src/client/app && npm start",
     "start": "node src/server.js && npm run client",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon src/server.js\" \"npm run client\""
   },
