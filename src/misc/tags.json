@@ -1,0 +1,4 @@
+{
+    "Web": ["HTML", "CSS", "JS", "Styling", "Interactions", "Tools", "ECMA", "SQL", "Mongo", "Postgres", "Node", "Django", "Flask", "React", "MERN"],
+    "App": ["Flutter", "Dart", "Java", "Kotlin"]
+}
