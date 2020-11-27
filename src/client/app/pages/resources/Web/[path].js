@@ -57,7 +57,7 @@ export async function getServerSideProps() {
     // ToDO: Using names find the appropriate content from api
 
     const options = {
-        url: 'http://localhost:5000/getcontent',
+        url: 'http://localhost:5000/api/getcontent',
         method: 'GET',
         headers: {
           'Accept': 'application/json',

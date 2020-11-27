@@ -1,12 +1,18 @@
 {
-  "name": "whitehat-leaderboard",
+  "name": "whitehat-sr",
   "version": "1.0.0",
-  "description": "Leaderboard for Whitehat community",
+  "description": "Portal for Whitehat community",
   "main": "app.js",
+  "engines": {
+    "node": "10.16.0"
+  },
   "scripts": {
-    "test": "nodemon app.js",
-    "deploy": "pm2 start app.js",
-    "start": "concurrently \"nodemon src/server/server.js\" \"cd src/client/app && npm run dev\" "
+    "build": "cd client/app && npm run build",
+    "install-client": "cd client/app && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "client": "cd client/app && npm start",
+    "start": "node src/server.js && npm run client",
+    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon src/server.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",

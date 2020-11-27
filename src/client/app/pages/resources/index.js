@@ -4,7 +4,7 @@ import Nav from '../../components/Nav'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-export default function Resources() {
+export default function Resources({route}) {
     return(
         <main className={styles.main2}>
             <div className={styles.side}>
@@ -22,7 +22,7 @@ export default function Resources() {
                                 </a>
                             </Link>
 
-                            <Link href="/resources/Web">
+                            <Link href="/resources/Web/Frontend Basics">
                                 <a className={styles.card}>
                                     <p>Web Development &rarr;</p>
                                 </a>
