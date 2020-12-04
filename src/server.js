@@ -27,6 +27,6 @@ app.use(cookieParser());
 app.use('/', require('./routes/resources'));
 
 
-app.listen(process.env.PORT_B || 5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('Server started on 5000!');
 });
