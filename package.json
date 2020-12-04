@@ -11,7 +11,7 @@
     "install-client": "cd src/client/app && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "client": "cd src/client/app && npm start",
-    "start": "npm run client && node src/server.js",
+    "start": "node src/server.js",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon src/server.js\" \"npm run client\""
   },
   "repository": {
