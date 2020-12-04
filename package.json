@@ -1,37 +1,21 @@
 {
-  "name": "whitehat-sr",
-  "version": "1.0.0",
-  "description": "Portal for Whitehat community",
-  "main": "app.js",
-  "engines": {
-    "node": "10.16.0"
-  },
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "b-client": "cd src/client/app && npm run build",
-    "client": "cd src/client/app && npm start",
-    "start": "node src/server.js",
-    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon src/server.js\" \"npm run client\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/piyushg9794/Whitehat-Sr"
-  },
-  "author": "Piyush",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/piyushg9794/Whitehat-Sr/issues"
-  },
-  "homepage": "https://github.com/piyushg9794/Whitehat-Sr#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "body-parser": "^1.19.0",
-    "concurrently": "^5.3.0",
-    "connect-busboy": "0.0.2",
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.10.13",
-    "morgan": "^1.10.0",
-    "pm2": "^4.5.0"
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "axios": "^0.21.0",
+    "flatted": "^3.1.0",
+    "next": "^10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
